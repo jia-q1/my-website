@@ -315,12 +315,10 @@ html, body {
   }
   
   figure img {
-    margin: 0px;
-    margin-inline-start: 30px;
-    margin-inline-end: 20px;
+    margin: -20px 20px 0 30px; 
     transform: scaleX(-1);
+}
 
-  }
   
   footer {
     clear: both;
