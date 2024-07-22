@@ -62,30 +62,7 @@ html, body {
 
 }
 
-/* Adjustments for medium screens */
-@media (max-width: 768px) {
-  nav {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 0; 
-  }
 
-  nav a {
-      margin: 13px 0; 
-  }
-}
-
-/* Adjustments for small screens */
-@media (max-width: 480px) {
-  nav {
-      margin-block-start: 10px;
-      margin-block-end: 10px;
-  }
-  
-  nav a {
-      font-size: 20px; /* Adjust font size for smaller screens */
-  }
-}
 
   #navfont {
     font-weight: 100;
@@ -448,71 +425,6 @@ html, body {
 .album audio {
   margin-top: 10px;
 }
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .gallery-container, .album-gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-  
-  @media (max-width: 480px) {
-    #top {
-      padding: 20px;
-      background-color: #fff;
-      text-align: center;
-    }
-  
-    body {
-      align-items: stretch;
-    }
-  
-    .c {
-      text-align: center;
-    }
-  
-    nav {
-      flex-direction: column;
-      margin: 5%;
-      padding: 5px;
-      align-items: center;
-    }
-      
-    nav a {
-      margin: auto;
-      padding: 15px;
-    }
-  
-    header {
-      flex-direction: column;
-      position: static;
-      align-content: center;
-    }
-  
-    img {
-      display: block;
-    }
-  
-    
-  
-    .Projectcard {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .Projectcard img {
-      margin-bottom: 20px;
-    }
-  
-    .card-content {
-      margin-left: 0;
-      text-align: center;
-    }
-  }
   
   /*About Page */
   .about-page-body {
@@ -629,21 +541,7 @@ html, body {
     color: #0066cc;
 }
 
-@media (max-width: 768px) {
-    .about-page-header {
-        text-align: center;
-    }
 
-    .about-page-nav {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .about-page-buttons {
-        flex-direction: column;
-        gap: 0.5em;
-    }
-}
 
 /*Personal Website*/
 .project-header {
@@ -689,7 +587,7 @@ h1{
 /* Media query Cloud Transparency*/
 @media (max-width: 1200px) {
   .cloud {
-      opacity: 0.8;
+      opacity: 0.1;
   }
 
   .arrow{
@@ -701,7 +599,7 @@ h1{
 /* less than 1000px */
 @media (max-width: 1000px) {
   .cloud {
-      opacity: 0.0;
+      opacity: 0.1;
   }
 
   .arrow {
@@ -712,7 +610,7 @@ h1{
 /* less than 800px */
 @media (max-width: 800px) {
   .cloud {
-      opacity: 0.4;
+      opacity: 0.1;
   }
 
   .arrow {
@@ -723,7 +621,7 @@ h1{
 /*  less than 600px */
 @media (max-width: 600px) {
   .cloud {
-      opacity: 0.2;
+      opacity: 0.1;
   }
 
   .arrow {
@@ -742,3 +640,126 @@ h1{
 }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery-container, .album-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  
+@media (max-width: 480px) {
+    #top {
+      padding: 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+  
+    body {
+      align-items: stretch;
+    }
+  
+    .c {
+      text-align: center;
+    }
+  
+    nav {
+      flex-direction: column;
+      margin: 5%;
+      padding: 5px;
+      align-items: center;
+    }
+      
+    nav a {
+      margin: auto;
+      padding: 15px;
+    }
+  
+    header {
+      flex-direction: column;
+      position: static;
+      align-content: center;
+    }
+  
+    img {
+      display: block;
+    }
+  
+    
+  
+    .Projectcard {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Projectcard img {
+      margin-bottom: 20px;
+    }
+  
+    .card-content {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+
+  /* Adjustments for medium screens */
+@media (max-width: 800px) {
+  header {
+    justify-content: flex-end;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 1; 
+  }
+
+  nav a {
+      margin: 13px 0; 
+  }
+
+  .layout{
+    text-align: center;
+    display:block;
+  }
+
+  .about-page-header {
+    text-align: center;
+}
+
+.about-page-nav {
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about-page-buttons {
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#profile-picture{
+  display:none;
+}
+
+
+
+ 
+}
+
+/* Adjustments for small screens */
+@media (max-width: 480px) {
+  nav {
+      margin-block-start: 10px;
+      margin-block-end: 10px;
+  }
+  
+  nav a {
+      font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  #profile-picture {
+   opacity: 1.0;
+  }
+  
+}
