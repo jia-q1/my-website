@@ -162,7 +162,7 @@ html, body {
   
   /** Projects Section **/
   .myprojects {
-    padding: 30px 90px;
+    padding: 25px;
   }
   
   h3 {
@@ -705,6 +705,9 @@ h1{
 
   /* Adjustments for medium screens */
 @media (max-width: 800px) {
+  nav{
+    column-gap: 15%;
+  }
 
   nav a {
       margin: 13px 0; 
@@ -747,6 +750,9 @@ h1{
 }
 .Projectcard a{
   width:auto;
+}
+.myprojects{
+  padding:10px;
 }
 }
 
@@ -791,5 +797,30 @@ h1{
 
   .intro{
     font-size:15px;
+  }
+  .myprojects{
+    padding:10px;
+  }
+}
+
+@media(max-width:450px){
+  nav{
+    column-gap: 5%;
+  }
+
+  nav a{
+    font-size:35%;
+  }
+
+  .arrow{
+    display:none;
+  }
+
+  .myprojects h3{
+    font-size:45px;
+  }
+
+  .myprojects{
+    padding: 10px;
   }
 }
