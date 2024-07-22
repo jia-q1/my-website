@@ -115,7 +115,7 @@ html, body {
     grid-template-areas:
       "a b"
       "a c";
-    gap: 20px;
+    gap: 10%;
   }
   
   .cloud {
