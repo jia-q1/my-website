@@ -35,3 +35,14 @@ myTracy.style.color="Black";
 
 let myCarol=document.querySelector(".altwo")
 myCarol.style.color="Black";
+
+//Burger Menu
+
+document.getElementById('hamburger-menu').addEventListener('click', function() {
+  const mobileNav = document.getElementById('mobile-nav');
+  if (mobileNav.style.display === 'flex') {
+      mobileNav.style.display = 'none';
+  } else {
+      mobileNav.style.display = 'flex';
+  }
+});

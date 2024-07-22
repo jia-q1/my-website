@@ -705,18 +705,10 @@ h1{
 
   /* Adjustments for medium screens */
 @media (max-width: 800px) {
-  header {
-    justify-content: flex-end;
-  }
-
-  nav {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 1; 
-  }
 
   nav a {
       margin: 13px 0; 
+      font-size:15px;
   }
 
   .layout{
@@ -742,9 +734,20 @@ h1{
   display:none;
 }
 
+.intro{
+  font-size:15px;
+  padding:15px;
+}
 
-
- 
+.b{
+  margin-top:30px;
+}
+.Projectcard{
+  display:grid;
+}
+.Projectcard a{
+  width:auto;
+}
 }
 
 /* Adjustments for small screens */
@@ -754,12 +757,39 @@ h1{
       margin-block-end: 10px;
   }
   
+  #navfont{
+    display: inline;
+    align-items:center;
+        
+  }
   nav a {
-      font-size: 20px; /* Adjust font size for smaller screens */
+      font-size: 13px; 
+      
   }
 
   #profile-picture {
    opacity: 1.0;
   }
-  
+  .Projectcard{
+    display:grid;
+  }
+
+  .Projectcard a{
+    width:auto;
+  }
+
+  .b{
+    font-size:70px;
+    margin-top:0;
+  }
+  .c{
+    padding-top: 15px;
+  }
+  .name{
+    font-size:75px;
+  }
+
+  .intro{
+    font-size:15px;
+  }
 }
