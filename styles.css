@@ -360,7 +360,11 @@ html, body {
 .gallery-item p {
   margin: 10px 0;
   font-style: italic;
+  color: #504C44
+}
 
+.covervids {
+  text-align:center;
 }
 
 .container {
@@ -425,7 +429,7 @@ html, body {
 .album audio {
   margin-top: 10px;
 }
-  
+
   /*About Page */
   .about-page-body {
     font-family: 'Noto Serif', serif;
