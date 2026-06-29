@@ -6,7 +6,7 @@ import Reveal from "./components/Reveal";
 export default function Home() {
   return (
     <>
-      <section className="relative flex min-h-[calc(100vh-4.5rem)] items-center overflow-hidden px-[7%] py-16">
+      <section className="relative flex min-h-[calc(100vh-4.5rem)] flex-col items-center justify-center gap-10 overflow-hidden px-[7%] py-16">
         <Image
           src="/images/clouds.png"
           alt=""
@@ -33,15 +33,35 @@ export default function Home() {
               <span className="font-display whitespace-nowrap text-accent">Jia Qi</span>
             </h1>
             <p className="mt-6 max-w-md font-sans text-base tracking-[0.15em] text-ink sm:text-lg">
-              I&rsquo;M AN NYU STUDENT STUDYING CS, DS, AND BUSINESS
+              I LIKE CS, DS, AND BUSINESS (I GUESS)
             </p>
           </div>
         </div>
+
+        <a
+          href="#projects"
+          aria-label="Scroll to projects"
+          className="text-ink transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+        >
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </a>
       </section>
 
       <hr className="mx-[7%] border-ink/20" />
 
-      <section className="px-[7%] py-16">
+      <section id="projects" className="px-[7%] py-16">
         <Reveal>
           <h2 className="font-serif text-3xl tracking-[0.15em] text-ink sm:text-5xl">
             MY PROJECTS

@@ -42,11 +42,11 @@ export const metadata: Metadata = {
     template: "%s | Jia Qi",
   },
   description:
-    "Portfolio of Jia Qi, an NYU student studying Computer Science, Data Science, and Business.",
+    "Portfolio of Jia Qi, an NYU graduate in Computer Science, Data Science, and Business.",
   openGraph: {
     title: "Jia Qi",
     description:
-      "Portfolio of Jia Qi, an NYU student studying Computer Science, Data Science, and Business.",
+      "Portfolio of Jia Qi, an NYU graduate in Computer Science, Data Science, and Business.",
     images: ["/images/profile-pic.png"],
   },
 };

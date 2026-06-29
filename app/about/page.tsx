@@ -6,7 +6,7 @@ import Reveal from "../components/Reveal";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Jia Qi — a Data Science and Computer Science joint major with a minor in Business at NYU.",
+    "About Jia Qi — a Data Science and Computer Science graduate from NYU, with a minor in Business.",
 };
 
 export default function About() {
@@ -21,8 +21,8 @@ export default function About() {
       <Reveal delay={0.1}>
         <div className="mx-auto mt-10 max-w-xl space-y-5 text-center font-serif text-lg leading-relaxed text-ink">
           <p>
-            I&rsquo;m a Data Science and Computer Science joint major with a minor in
-            Business at NYU.
+            I&rsquo;m a recent NYU graduate in Data Science and Computer Science, with a
+            minor in Business. 
           </p>
           <p>
             I&rsquo;m fascinated by how technology, business, and psychology intersect,

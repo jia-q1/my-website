@@ -11,16 +11,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 flex w-full items-center justify-between bg-white/90 px-[7%] py-4 backdrop-blur-sm">
-      <Link
-        href="/"
-        className="font-serif text-2xl tracking-wide text-ink"
-        onClick={() => setOpen(false)}
-      >
-        Jia Qi
-      </Link>
-
-      <nav className="hidden gap-8 font-serif text-lg tracking-[0.12em] text-ink sm:flex">
+    <header className="sticky top-0 z-50 flex w-full items-center justify-between bg-white/90 px-[7%] py-10 backdrop-blur-sm">
+      <nav className="hidden gap-20 font-serif text-3xl tracking-[0.12em] text-ink sm:flex">
         {navLinks.map((link) => (
           <Link
             key={link.href}
@@ -35,6 +27,14 @@ export default function Header() {
           </Link>
         ))}
       </nav>
+
+      <Link
+        href="/"
+        className="font-serif text-2xl tracking-wide text-ink"
+        onClick={() => setOpen(false)}
+      >
+        Jia Qi
+      </Link>
 
       <button
         type="button"
@@ -64,7 +64,7 @@ export default function Header() {
       {open && (
         <nav
           id="mobile-nav"
-          className="absolute left-0 top-full flex w-full flex-col items-center gap-2 bg-white py-6 font-serif text-xl tracking-[0.12em] text-ink shadow-md sm:hidden"
+          className="absolute left-0 top-full flex w-full flex-col items-center gap-2 bg-white py-6 font-serif text-2xl tracking-[0.12em] text-ink shadow-md sm:hidden"
         >
           {navLinks.map((link) => (
             <Link
