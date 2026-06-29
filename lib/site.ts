@@ -3,6 +3,7 @@ export const site = {
   email: "jiaqi75210@gmail.com",
   linkedin: "https://www.linkedin.com/in/jia-q1",
   resumeHref: "/documents/Jia.Qi.Resume.pdf",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://my-website-xi-dusky.vercel.app",
 };
 
 export const navLinks = [

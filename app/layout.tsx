@@ -3,6 +3,7 @@ import { Baskervville, EB_Garamond, Gothic_A1, Inter, Noto_Serif } from "next/fo
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { site } from "@/lib/site";
 
 const baskervville = Baskervville({
   variable: "--font-baskervville",
@@ -35,6 +36,7 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
     default: "Jia Qi",
     template: "%s | Jia Qi",
