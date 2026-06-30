@@ -1,4 +1,4 @@
-# Jia Qi — Personal Website
+# Personal Website
 
 Source for my personal portfolio site: home, about, gallery, and project pages.
 
