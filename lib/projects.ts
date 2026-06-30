@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "Determine whether natural disasters meaningfully influence weekly climate sentiment.",
     ],
     description:
-      "Analyzed over 15 million tweets from 2006–2019 to model how climate change sentiment evolves and whether natural disasters drive that change. Tweets were aggregated weekly across 10 climate-related topics and paired with a natural disaster dataset. Linear Regression, Random Forest, Gradient Boosting, and LSTM models were trained under baseline and disaster-augmented conditions to predict future weekly sentiment. Results showed that prior sentiment — not disaster occurrence — is the dominant predictor; adding disaster features (fatality counts, occurrence flags, disaster counts) produced little improvement across all models.",
+      "Analyzed over 15 million tweets from 2006–2019 to model how climate change sentiment evolves and whether natural disasters drive that change. Tweets were aggregated weekly across 10 climate-related topics and paired with a natural disaster dataset. Linear Regression, Random Forest, Gradient Boosting, and LSTM models were trained under baseline and disaster-augmented conditions to predict future weekly sentiment. Results showed that prior sentiment, not disaster occurrence, is the dominant predictor; adding disaster features (fatality counts, occurrence flags, disaster counts) produced little improvement across all models.",
     links: {
       github: "https://github.com/jia-q1/tweet_tweet",
       findings:
