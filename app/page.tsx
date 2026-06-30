@@ -12,28 +12,28 @@ export default function Home() {
           alt=""
           width={420}
           height={210}
-          className="pointer-events-none absolute right-[5%] top-[10%] hidden w-[260px] opacity-30 sm:block sm:w-[420px]"
+          className="pointer-events-none absolute right-[5%] top-[10%] hidden w-[260px] opacity-30 sm:block sm:w-[420px] lg:w-[560px]"
         />
 
-        <div className="relative grid w-full grid-cols-1 items-center gap-10 md:grid-cols-[auto_1fr] md:gap-x-16">
+        <div className="relative grid w-full grid-cols-1 items-center gap-10 md:grid-cols-[auto_1fr] md:gap-x-30 lg:gap-x-40">
           <Image
             src="/images/profile-pic.png"
             alt="Caricature of me drawn in Korea"
-            width={390}
-            height={546}
-            className="mx-auto w-full max-w-[300px] md:max-w-[390px]"
+            width={676}
+            height={946}
+            className="mx-auto w-full max-w-[390px] md:max-w-[460px] lg:max-w-[540px]"
             priority
           />
 
           <div>
-            <h1 className="font-serif text-[64px] leading-[1.05] text-ink md:text-[110px]">
+            <h1 className="font-serif text-[64px] leading-[1.05] text-ink md:text-[110px] lg:text-[145px]">
               HI,
               <br />
               I&rsquo;M{" "}
               <span className="font-display whitespace-nowrap text-accent">Jia Qi</span>
             </h1>
-            <p className="mt-6 max-w-md font-sans text-base tracking-[0.15em] text-ink sm:text-lg">
-              I LIKE CS, DS, AND BUSINESS (I GUESS)
+            <p className="mt-6 max-w-lg font-sans text-base tracking-[0.15em] text-ink sm:text-lg lg:text-xl">
+              I LIKE CS, DS, AND BUSINESS (I THINK)
             </p>
           </div>
         </div>

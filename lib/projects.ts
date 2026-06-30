@@ -15,6 +15,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "tweet-tweet",
+    title: "Tweet Tweet",
+    tags: ["NLP", "Machine Learning", "Python", "Data Science"],
+    thumbnail: "/images/tweet_tweet.png",
+    thumbnailAlt: "Tweet Tweet climate sentiment project",
+    objectives: [
+      "Investigate how climate change sentiment on Twitter shifts over time.",
+      "Determine whether natural disasters meaningfully influence weekly climate sentiment.",
+    ],
+    description:
+      "Analyzed over 15 million tweets from 2006–2019 to model how climate change sentiment evolves and whether natural disasters drive that change. Tweets were aggregated weekly across 10 climate-related topics and paired with a natural disaster dataset. Linear Regression, Random Forest, Gradient Boosting, and LSTM models were trained under baseline and disaster-augmented conditions to predict future weekly sentiment. Results showed that prior sentiment — not disaster occurrence — is the dominant predictor; adding disaster features (fatality counts, occurrence flags, disaster counts) produced little improvement across all models.",
+    links: {
+      github: "https://github.com/jia-q1/tweet_tweet",
+      findings:
+        "https://docs.google.com/document/d/1Z8zZpYqcIn9r9O8SRm6grWsR89GtkiBxtZdgcxOytaw/edit?usp=sharing",
+      demo: "https://docs.google.com/presentation/d/1lGlEj8HVi23M4a3QqpmfRSaN5Y5mLEmANiBft1OCXaA/edit?usp=sharing",
+    },
+  },
+  {
     slug: "capstone",
     title: "Capstone Project",
     tags: ["Data Science", "Python", "Machine Learning"],
