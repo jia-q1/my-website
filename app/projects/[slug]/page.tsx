@@ -87,7 +87,10 @@ export default async function ProjectDetail({
           </a>
 
           <div>
-            <p className="font-sans text-lg tracking-[0.1em] text-ink">Objectives:</p>
+            <p className="font-serif text-base leading-relaxed text-ink">
+              {project.description}
+            </p>
+            <p className="mt-6 font-sans text-lg tracking-[0.1em] text-ink">Objectives:</p>
             <ul className="mt-3 list-disc space-y-2 pl-5 font-sans text-sm text-ink">
               {project.objectives.map((objective) => (
                 <li key={objective}>{objective}</li>
@@ -98,12 +101,6 @@ export default async function ProjectDetail({
       </Reveal>
 
       <Reveal delay={0.15}>
-        <p className="mt-10 max-w-3xl font-serif text-lg leading-relaxed text-ink">
-          {project.description}
-        </p>
-      </Reveal>
-
-      <Reveal delay={0.2}>
         <Link
           href="/projects"
           className="mt-12 inline-block font-sans text-sm tracking-[0.1em] text-accent hover:underline"
